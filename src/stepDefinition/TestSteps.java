@@ -67,7 +67,6 @@ public class TestSteps {
 		actions.sendKeys(Keys.ENTER).build().perform();
 		Thread.sleep(2000);
 		actions.sendKeys(textToSearch).build().perform();		
-		//actions.sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).sendKeys(Keys.ENTER).build().perform();		
 		WebElement = Utils.waitForVisibilityByXpath(driver, ".//*[@id='profile-wrapper']/div[4]/div[1]", 10);
 		Assert.assertEquals(true, WebElement.isDisplayed());
 		Log.info("Ver perfil exitoso");		

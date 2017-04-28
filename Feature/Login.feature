@@ -3,6 +3,7 @@
 @tag0
 Feature: Proceso de Login	
 
+
 @tag1
 Scenario Outline: Loguearse y realizar la busqueda de algun contacto de la red y visualizar su perfil
 Given Usuario esta en el Home Page
@@ -11,7 +12,8 @@ Then Se despliega el mensaje: Login y Ver Perfil Exitoso
 
 Examples:
     | username  						| password			|
-    | felipe.anic@gmail.com | ZoSi3251. |
+    | felipe.anic@gmail.com | 123456				|
+
 
 @tag1
 Scenario Outline: Loguearse con un usuario no registrado
